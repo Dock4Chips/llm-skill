@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from typing import Iterable
 
-from scripts.core.schemas import NormalizedTrendRecord, RawTrendRecord
+from .schemas import NormalizedTrendRecord, RawTrendRecord
 
 
 _whitespace_re = re.compile(r"\s+")

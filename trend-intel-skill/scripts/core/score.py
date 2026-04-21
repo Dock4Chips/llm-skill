@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from scripts.core.schemas import NormalizedTrendRecord
+from .schemas import NormalizedTrendRecord
 
 
 def _safe_max(values: list[float]) -> float:

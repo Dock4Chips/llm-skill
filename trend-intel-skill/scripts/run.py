@@ -10,9 +10,13 @@ PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from scripts.core.normalize import normalize_records
-from scripts.core.schemas import TrendReport
-from scripts.core.score import score_records
+if __package__ in (None, ""):
+    __package__ = "scripts"
+
+from .collectors import get_collector
+from .core.normalize import normalize_records
+from .core.schemas import TrendReport
+from .core.score import score_records
 
 
 def build_parser() -> argparse.ArgumentParser:

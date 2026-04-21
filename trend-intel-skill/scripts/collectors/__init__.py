@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from scripts.collectors.github import GitHubTrendingCollector
+from .github import GitHubTrendingCollector
 
 
 def get_collector(platform: str):
