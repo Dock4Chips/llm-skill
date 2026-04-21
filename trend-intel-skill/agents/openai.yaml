@@ -1,0 +1,7 @@
+interface:
+  display_name: "Trend Intel"
+  short_description: "Collect cross-platform trend reports"
+  default_prompt: "Use $trend-intel-skill to collect a trend report from GitHub now and keep the structure ready for more platforms later."
+
+policy:
+  allow_implicit_invocation: true
