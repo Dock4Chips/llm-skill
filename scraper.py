@@ -12,8 +12,9 @@ DEFAULT_OUTPUT_FOLDER = r'/Users/dock4chips/Documents/dock4chips_vault/trend-int
 
 def get_headers():
     """获取通用请求头"""
+    ua = UserAgent()
     return {
-        'User-Agent': UserAgent.random,
+        'User-Agent': ua.random,
         'Accept': 'application/vnd.github.v3+json',  # GitHub API v3
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'
