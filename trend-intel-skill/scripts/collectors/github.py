@@ -128,11 +128,7 @@ def _parse_trending_page(page: str, *, source_url: str, crawl_time: str) -> list
 
 class GitHubTrendingCollector:
     BASE_URL = "https://github.com/trending"
-    USER_AGENT = (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
+    USER_AGENT = UserAgent()
 
     def collect(
         self,
@@ -178,7 +174,7 @@ class GitHubTrendingCollector:
                 req = urllib.request.Request(
                     url=url,
                     headers={
-                        "User-Agent": self.USER_AGENT,
+                        "User-Agent": self.USER_AGENT.random,
                         "Accept": "text/html,application/xhtml+xml",
                         "Accept-Language": "en-US,en;q=0.9",
                     },
