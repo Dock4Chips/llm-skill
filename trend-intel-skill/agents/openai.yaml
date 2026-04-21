@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trend Intel"
+  short_description: "Crawl and rank trending topics from GitHub and future platforms"
+  default_prompt: "Use $trend-intel-skill to crawl recent trends, score momentum, and output a concise report with evidence."
