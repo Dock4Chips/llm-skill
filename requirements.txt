@@ -1,0 +1,4 @@
+requests~=2.33.1
+pyquery~=2.0.1
+schedule~=1.2.2
+fake-useragent~=2.2.0
